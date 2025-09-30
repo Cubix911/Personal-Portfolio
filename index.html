@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kachi-Nwoga Uchechukwu Edward Portfolio</title>
+  <meta name="description" content="Senior Full Stack Developer portfolio — modern, accessible, security-minded projects, timeline, and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" >
+  <!-- Font Awesome for icons (CDN) -->
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">
+            <img src="" alt="photo id">
+          </div>
+          <div>
+            <h1>Kachi-Nwoga Uchechukwu— Full Stack Web Developer </h1>
+            <div style="font-size:12px;color:var(--muted)">3+ years building secure, scalable web systems</div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <h2>Secure Full Stack Engineer — building products users love, with threat models in mind.</h2>
+          <p class="lead">I design and ship production grade web applications (React, Node, Go), secure cloud infrastructure (AWS, GCP), and automated CI/CD pipelines with built-in security controls.</p>
+          <div class="cta">
+            <button class="btn btn-primary" onclick="scrollToSection('#projects')">View Projects</button>
+            <a class="btn btn-ghost" href="#contact">Request a Security Review</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric">
+              <div class="num" data-count="3">0</div>
+              <div class="muted">Years Experience</div>
+            </div>
+            <div class="metric">
+              <div class="num" data-count="30">0</div>
+              <div class="muted">Deployed Services</div>
+            </div>
+            <div class="metric">
+              <div class="num" data-count="10">0</div>
+              <div class="muted">Security Issues Resolved</div>
+            </div>
+          </div>
+          <div style="margin-top:18px;color:var(--muted);font-size:13px">Open to remote or hybrid roles • Available for contractor engagements</div>
+        </div>
+        <aside class="hero-visual reveal">
+          <div class="scene">
+            <div class="code-window">
+              
+<pre style="margin:0">// Threat model snippet (example)
+const allowedOrigins = new Set(process.env.ALLOWED_ORIGINS?.split(',') || []);
+app.use(cors({origin: (o, cb)=> cb(null, allowedOrigins.has(o))}));
+// CI: build -> test -> static analysis -> container scan -> deploy
+</pre>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:10px;align-items:center;justify-content:space-between">
+              <div style="display:flex;gap:8px">
+                <a aria-label="GitHub" href="https://github.com/Cubix911" target="_blank" rel="noopener">GitHub</a>
+                <a aria-label="LinkedIn" href=" " target="_blank" rel="noopener">LinkedIn</a>
+              </div>
+              <div style="font-size:13px;color:var(--muted)">Based in Imo • UTC+1</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+      <!-- ABOUT -->
+      <section id="about" class="reveal">
+        <h3>About</h3>
+        <div class="hero-card">
+          <p style="margin:0;color:var(--muted)">I'm a full stack Web Developer and security practitioner focused on building reliable APIs, resilient infrastructure, and secure frontend experiences. I specialise in Web Development, application hardening, and creating developer-friendly observability pipelines.</p>
+          <div style="display:flex;gap:18px;margin-top:18px;flex-wrap:wrap">
+            <div style="min-width:240px">
+              <strong>Primary stack</strong>
+              <div style="color:var(--muted)">React • Node.js • Express • PostgreSQL • Redis • Docker • Kubernetes</div>
+            </div>
+            <div style="min-width:240px">
+              <strong>Security tooling</strong>
+              <div style="color:var(--muted)">OWASP ASVS • Burp Suite • Snyk • Trivy • GCP/AWS security center</div>
+            </div>
+            <div style="min-width:240px">
+              <strong>Certifications</strong>
+              <div style="color:var(--muted)">Currently Studing...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SKILLS -->
+      <section id="skills" class="reveal">
+        <h3>Skills & Proficiency</h3>
+        <div class="grid skills">
+          <div class="skill">
+            <strong>Frontend</strong>
+            <div style="color:var(--muted);margin-top:8px">React, Next.js, Vite, TypeScript, Accessibility, Performance Optimization</div>
+            <div class="progress"><i style="width:40%"></i></div>
+          </div>
+          <div class="skill">
+            <strong>Backend & APIs</strong>
+            <div style="color:var(--muted);margin-top:8px">Node, Go, REST, GraphQL, gRPC, Postgres, High throughput design</div>
+            <div class="progress"><i style="width:20%"></i></div>
+          </div>
+          <div class="skill">
+            <strong>Cloud & Infra</strong>
+            <div style="color:var(--muted);margin-top:8px">AWS, GCP, Docker, Kubernetes, Terraform, Observability (Prometheus, Grafana)</div>
+            <div class="progress"><i style="width:6%"></i></div>
+          </div>
+        </div>
+      </section>
+      <!-- EXPERIENCE -->
+      <section id="experience" class="reveal">
+        <h3>Experience & Timeline</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div style="font-weight:700">Principal Engineer — Genesys Business Consults</div>
+            <div style="color:var(--muted);font-size:13px">2025 — Present</div>
+            <p style="margin-top:8px;color:var(--muted)">Carried the security-first rewrite of the Goole Foems, reduced load time to recovery by 25%, and in-web forms and zero-trust network segmentation.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div style="font-weight:700">Senior Software Engineer — Fexfit</div>
+            <div style="color:var(--muted);font-size:13px">2025 — Present</div>
+            <p style="margin-top:8px;color:var(--muted)">Built Ai workout App and led the platform's shift to a React Native architecture. Introduced cross platform optimization.</p>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECTS -->
+      <section id="projects" class="reveal">
+        <h3>Selected Projects</h3>
+        <div style="display:flex;gap:12px;margin-bottom:12px;align-items:center">
+          <div style="font-size:13px;color:var(--muted)">Filter:</div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-ghost" onclick="filterProjects('all')">All</button>
+            <button class="btn btn-ghost" onclick="filterProjects('web')">Web</button>
+            <button class="btn btn-ghost" onclick="filterProjects('infra')">Infra</button>
+            <button class="btn btn-ghost" onclick="filterProjects('security')">Sec</button>
+          </div>
+        </div>
+        <div class="grid projects" id="projects-grid">
+          <article class="project" data-type="web">
+            <div style="display:flex;justify-content:space-between;align-items:start">
+              <strong>RealTime Orders — React + WebSocket</strong>
+              <div style="font-size:12px;color:var(--muted)">2025</div>
+            </div>
+            <div style="color:var(--muted)">High-throughput dashboard for processing and reconciling orders with optimistic updates and strict input validation.</div>
+            <div class="tags"><span class="tag">React</span><span class="tag">Node</span><span class="tag">Postgres</span></div>
+            <div style="margin-top:auto;display:flex;gap:8px">
+              <a href="https://vibe-zeta-five.vercel.app" target="_blank" rel="noopener" class="btn btn-primary">Live</a>
+              <button class="btn btn-ghost" onclick="openModal(this)" data-title="RealTime Orders" data-desc="Architecture: ws + event sourcing. Security: rate limiting, input validation, RASP.">in progress</button>
+            </div>
+          </article>
+          <article class="project" data-type="infra">
+            <div style="display:flex;justify-content:space-between;align-items:start">
+              <strong>Infra-as-Code Toolkit</strong>
+              <div style="font-size:12px;color:var(--muted)">Sep 2023</div>
+            </div>
+            <div style="color:var(--muted)">Full time Business Consultations, Jod searching, Staff recruitment and Staff Training</div>
+            <div class="tags"><span class="tag">Terraform</span><span class="tag">AWS</span></div>
+            <div style="margin-top:auto;display:flex;gap:8px">
+              <a href="https://github.com/Cubix911/Genesys" target="_blank" rel="noopener" class="btn btn-primary">Repo</a>
+              <button class="btn btn-ghost" onclick="openModal(this)" data-title="Infra-as-Code Toolkit" data-desc="Includes policy-as-code tests and drift detection in CI.">Details</button>
+            </div>
+          </article>
+          <article class="project" data-type="security">
+            <div style="display:flex;justify-content:space-between;align-items:start">
+              <strong>App Hardening Utility</strong>
+              <div style="font-size:12px;color:var(--muted)">Jun 2022</div>
+            </div>
+            <div style="color:var(--muted)">An Ai powered Workout App</div>
+            <div class="tags"><span class="tag">Node</span><span class="tag">CI/CD</span><span class="tag">SAST</span></div>
+            <div style="margin-top:auto;display:flex;gap:8px">
+              <a href=" " target="_blank" rel="noopener" class="btn btn-primary">Live</a>
+              <button class="btn btn-ghost" onclick="openModal(this)" data-title="App Hardening Utility" data-desc="Automates CSP, HSTS, and security headers; integrates with GitHub Actions.">in progress</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section id="contact" class="reveal">
+        <h3>Contact</h3>
+        <div class="hero-card" style="display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start">
+          <form id="contactForm" onsubmit="submitContact(event)">
+            <label style="display:block;margin-bottom:6px">Name</label>
+            <input required name="name" style="width:100%;padding:10px;border-radius:8px;border:0;background:rgba(255,255,255,0.02);color:inherit;margin-bottom:8px">
+            <label style="display:block;margin-bottom:6px">Email</label>
+            <input required name="email" type="email" style="width:100%;padding:10px;border-radius:8px;border:0;background:rgba(255,255,255,0.02);color:inherit;margin-bottom:8px">
+            <label style="display:block;margin-bottom:6px">Message</label>
+            <textarea required name="message" rows="4" style="width:100%;padding:10px;border-radius:8px;border:0;background:rgba(255,255,255,0.02);color:inherit;margin-bottom:12px"></textarea>
+            <div style="display:flex;gap:8px">
+              <button class="btn btn-primary" type="submit">Send</button>
+              <button type="button" class="btn btn-ghost" onclick="copyEmail()">Copy Email</button>
+            </div>
+            <div id="formMsg" style="margin-top:10px;color:var(--muted);font-size:13px"></div>
+          </form>
+          <div style="padding:12px;background:rgba(255,255,255,0.02);border-radius:10px">
+            <strong>Quick contacts</strong>
+            <div style="margin-top:8px;color:var(--muted)">Email: <a href="mailto:edwardhendrick6@gmail.com">edwardhendrick6@gmail.com</a></div>
+            <div style="margin-top:8px;color:var(--muted)">GitHub: <a href="https://github.com/Cubix911" target="_blank" rel="noopener">Cubix911/a></div>
+            <div style="margin-top:8px;color:var(--muted)">LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">Edward Hendrick/a></div>
+            <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+            <div style="font-size:13px;color:var(--muted)"><strong>Security highlights</strong>
+              <ul style="margin:8px 0 0 18px;color:var(--muted)">
+                <li>Threat modelling for all major releases</li>
+                <li>Automated SAST/SCA in CI</li>
+                <li>Bug bounty program coordination</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="reveal">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>&copy; <span id="year"></span> Edward Hendrick</div>
+        <div style="color:var(--muted)">Built with attention to security, performance & accessibility</div>
+      </div>
+    </footer>
+  </div>
+  <!-- PROJECT DETAIL MODAL -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h4 id="modalTitle">Project</h4>
+        <button aria-label="Close" onclick="closeModal()" class="btn btn-ghost">Close</button>
+      </div>
+      <p id="modalDesc" style="color:var(--muted)"></p>
+      <pre id="modalCode" style="margin-top:12px;background:#02121a;padding:12px;border-radius:8px;color:#bde0d3;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;overflow:auto;max-height:220px">// Architecture & security notes will appear here</pre>
+    </div>
+  </div>
+  <script>
+    // small helpers
+    function scrollToSection(sel){document.querySelector(sel)?.scrollIntoView({behavior:'smooth',block:'start'})}
+    // Animated counters
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const counters = document.querySelectorAll('.num[data-count]');
+      counters.forEach(el=>{
+        const target = +el.dataset.count;
+        let cur = 0; const step = Math.max(1, Math.floor(target/60));
+        const t = setInterval(()=>{
+          cur += step; if(cur>=target){el.textContent = target; clearInterval(t);} else el.textContent = cur;
+        },18)
+      })
+      // Reveal on scroll using intersection observer
+      const obs = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){e.target.classList.add('visible'); obs.unobserve(e.target)}
+        })
+      },{threshold:0.12});
+      document.querySelectorAll('.reveal').forEach(n=>obs.observe(n));
+      // Add small entrance to hero visual
+      document.querySelectorAll('.hero-visual.reveal').forEach(n=>setTimeout(()=>n.classList.add('visible'),400));
+    })
+    // Project modal
+    function openModal(btn){
+      const modal = document.getElementById('projectModal');
+      const title = btn.dataset.title || 'Project';
+      const desc = btn.dataset.desc || '';
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalDesc').textContent = desc;
+      document.getElementById('modalCode').textContent = "// Sample security checklist:\n- SAST \n- SCA \n- CSP \n- HSTS \n- Rate limiting\n\n// Notes: provide design docs and architecture diagram here.";
+      modal.classList.add('show'); modal.setAttribute('aria-hidden','false');
+    }
+    function closeModal(){const modal=document.getElementById('projectModal');modal.classList.remove('show');modal.setAttribute('aria-hidden','true')}
+    // Project filter
+    function filterProjects(type){
+      const items = document.querySelectorAll('#projects-grid .project');
+      items.forEach(it=>{
+        const t = it.dataset.type;
+        if(type==='all' || t===type){it.style.display='flex'} else it.style.display='none'
+      })
+    }
+    // Contact form (non-blocking local demo)
+    function submitContact(e){
+      e.preventDefault();
+      const f = e.target; const msg = document.getElementById('formMsg');
+      msg.textContent = 'Sending — demo mode (replace this handler with your backend).';
+      setTimeout(()=>{msg.textContent='Message sent — I will reply within 2 business days (demo).'; f.reset()},700);
+    }
+    // Copy email helper
+    function copyEmail(){navigator.clipboard.writeText('alex@yourdomain.com').then(()=>alert('Email copied to clipboard'))}
+    // keyboard accessibility for modal
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal() });
+    // Progressive enhancement: check for service worker (example of security-minded PWA)
+    if('serviceWorker' in navigator){
+      // intentionally commented out — add your SW path if using PWA features
+      // navigator.serviceWorker.register('/sw.js')
+    }
+  </script>
+</body>
+</html>
