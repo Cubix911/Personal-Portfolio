@@ -50,6 +50,8 @@
         display:flex;
         gap:12px;
         align-items:center;
+    }
+    .brand .logo{
         width:20px;
         height:20px;
         border-radius:10px;
@@ -58,12 +60,7 @@
         background:linear-gradient(135deg,#06202a,#0b3b29);
         font-weight:800
     }
-    .img-logo{
-        width: 40px;
-        height:auto;
-        border-radius:8px;
-        object-fit:cover;
-    }
+
     .brand h1{
         font-size:16px;
         margin:0
