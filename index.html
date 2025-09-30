@@ -290,8 +290,27 @@ app.use(cors({origin: (o, cb)=> cb(null, allowedOrigins.has(o))}));
     function submitContact(e){
       e.preventDefault();
       const f = e.target; const msg = document.getElementById('formMsg');
-      msg.textContent = 'Sending — demo mode (replace this handler with your backend).';
-      setTimeout(()=>{msg.textContent='Message sent — I will reply within 2 business days (demo).'; f.reset()},700);
+      msg.textContent = 'Sending...';
+      // Send form data to email using EmailJS (client-side demo)
+      // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', 'YOUR_USER_ID' with your EmailJS credentials
+      const formData = {
+        name: f.name.value,
+        email: f.email.value,
+        message: f.message.value
+      };
+      fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          service_id: 'service_xwkb808',
+          template_id: 'template_nd4vrhh',
+          user_id: 'Edward',
+          template_params: formData
+        })
+      })
+      .then(res => res.ok ? msg.textContent = 'Message sent' : msg.textContent = 'Failed to send. Please try again later.')
+      .catch(()=>msg.textContent = 'Failed to send. Please try again later.');
+      setTimeout(()=>{msg.textContent='Message sent — I will reply within 2 business days.'; f.reset()},700);
     }
     // Copy email helper
     function copyEmail(){navigator.clipboard.writeText('edwardhendrick6@gmail.com').then(()=>alert('Email copied to clipboard'))}
