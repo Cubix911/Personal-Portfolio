@@ -48,11 +48,19 @@
     }
     .brand{
         display:flex;
-        gap:12px;align-items:center
-    }
-    .brand .logo{
+        gap:12px;
+        align-items:center;
         width:46px;
         height:46px;
+        border-radius:10px;
+        display:grid;
+        place-items:center;
+        background:linear-gradient(135deg,#06202a,#0b3b29);
+        font-weight:800
+    }
+    .logo{
+        width:20px;
+        height:20px;
         border-radius:10px;
         display:grid;
         place-items:center;
