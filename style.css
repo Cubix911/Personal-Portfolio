@@ -1,12 +1,13 @@
 :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --muted:#9aa4b2;
-      --accent:#6ee7b7;
-      --glass: rgba(255,255,255,0.03);
-      --glass-2: rgba(255,255,255,0.02);
-      --radius:14px;
-      --mono: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    --bg:#0f1724;
+    --card:#0b1220;
+    --muted:#9aa4b2;
+    --accent:#6ee7b7;
+    --glass: rgba(255,255,255,0.03);
+    --glass-2: rgba(255,255,255,0.02);
+    --radius:14px;
+    --mono: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    --text: #e6eef6; /* default text color for dark theme */
     }
     *{
         box-sizing:border-box
@@ -16,13 +17,24 @@
     }
     body{
       margin:0;
-      background:linear-gradient(180deg,var(--bg) 0%, #08101a 100%);
-      color:#e6eef6;
+            background:linear-gradient(180deg,var(--bg) 0%, #08101a 100%);
+            color:var(--text);
       font-family:var(--mono);
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
       line-height:1.45;
     }
+        /* Light theme overrides (applied by adding class `light` to <body>) */
+        body.light{
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --muted: #475569;
+            --accent: #06b6d4;
+            --glass: rgba(2,6,23,0.02);
+            --glass-2: rgba(2,6,23,0.01);
+            --text: #0f1724;
+            background: linear-gradient(180deg,var(--bg) 0%, #eef2f7 100%);
+        }
     a{
         color:var(--accent); 
         text-decoration:none
@@ -46,6 +58,11 @@
       border-radius:12px;
       box-shadow:0 6px 20px rgba(2,6,23,0.7);
     }
+        .nav-actions{
+            display:flex;
+            align-items:center;
+            gap:12px;
+        }
     .brand{
         display:flex;
         gap:12px;
@@ -71,6 +88,26 @@
         list-style:none;
         margin:0;padding:0
     }
+
+        /* Theme toggle */
+        .theme-toggle{
+            appearance:none;
+            -webkit-appearance:none;
+            border:0;
+            background:transparent;
+            color:var(--text);
+            width:40px;
+            height:40px;
+            display:inline-grid;
+            place-items:center;
+            border-radius:10px;
+            cursor:pointer;
+            transition:background .16s, color .16s, transform .08s;
+            padding:6px;
+        }
+        .theme-toggle:hover{ background: rgba(0,0,0,0.06); transform: translateY(-1px) }
+        body.light .theme-toggle:hover{ background: rgba(2,6,23,0.04) }
+        .theme-toggle svg{ display:block }
     nav li{
         font-weight:600
     }
