@@ -376,7 +376,7 @@ app.use(cors({origin: (o, cb)=> cb(null, allowedOrigins.has(o))}));
       const MAX_STARS = 120;
       const SPAWN_THROTTLE = 25; // ms
       let last = 0;
-      const colors = ['#ffffff','#ffd86b','#9be7a3','#d6d5ff'];
+      const colors = ['#ffffff','#ffd86b','#9be7a3','#d6d5ff' ];
 
       function createStar(x,y){
         const star = document.createElement('span');
