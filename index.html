@@ -9,8 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" >
   <link rel="icon" type="image/png" href="IMG-20240619-WA0013-pica.png">
-  <link rel="Js" href="main.js">
-
   <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -369,6 +367,44 @@ app.use(cors({origin: (o, cb)=> cb(null, allowedOrigins.has(o))}));
           localStorage.setItem(STORAGE_KEY, next);
         });
       }
+    })();
+  </script>
+  <script>
+    /* Cursor trail: shooting stars following the cursor */
+    (function(){
+      if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const MAX_STARS = 120;
+      const SPAWN_THROTTLE = 25; // ms
+      let last = 0;
+      const colors = ['#ffffff','#ffd86b','#9be7a3','#d6d5ff'];
+
+      function createStar(x,y){
+        const star = document.createElement('span');
+        star.className = 'cursor-star';
+        const size = Math.random()*8 + 6; // 6-14px
+        star.style.width = star.style.height = size + 'px';
+        star.style.left = (x - size/2) + 'px';
+        star.style.top = (y - size/2) + 'px';
+        star.style.background = colors[Math.floor(Math.random()*colors.length)];
+        star.style.opacity = '1';
+        document.body.appendChild(star);
+        star.addEventListener('animationend', ()=> star.remove());
+        // keep DOM small
+        if(document.querySelectorAll('.cursor-star').length > MAX_STARS){
+          const first = document.querySelector('.cursor-star'); if(first) first.remove();
+        }
+      }
+
+      function onMove(e){
+        const now = Date.now(); if(now - last < SPAWN_THROTTLE) return; last = now;
+        const x = e.clientX, y = e.clientY; createStar(x,y);
+        if(Math.random()>0.6) createStar(x + (Math.random()*14 -7), y + (Math.random()*10 -5));
+      }
+
+      window.addEventListener('mousemove', onMove);
+      window.addEventListener('touchmove', (e)=>{
+        const t = e.touches && e.touches[0]; if(t) onMove({clientX: t.clientX, clientY: t.clientY});
+      }, {passive:true});
     })();
   </script>
 </body>
