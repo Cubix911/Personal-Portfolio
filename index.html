@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" >
   <link rel="icon" type="image/png" href="IMG-20240619-WA0013-pica.png">
+  <link rel="Js" href="main.js">
 
   <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
@@ -21,7 +22,7 @@
             <img class="logo" src="IMG-20240619-WA0013-pica.png" alt="photo id">
           </div>
           <div>
-            <h1>Kachi-Nwoga Uchechukwu— Full Stack Web Developer </h1>
+            <h1>Kachi-Nwoga Uchechukwu — Full Stack Web Developer </h1>
             <div style="font-size:12px;color:var(--muted)">3+ years building secure, scalable web systems and Websites</div>
           </div>
         </div>
@@ -266,6 +267,8 @@ app.use(cors({origin: (o, cb)=> cb(null, allowedOrigins.has(o))}));
           cur += step; if(cur>=target){el.textContent = target; clearInterval(t);} else el.textContent = cur;
         },18)
       })
+      //next task
+      //try to slow down data-count
 
       const obs = new IntersectionObserver((entries)=>{
         entries.forEach(e=>{
