@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigerian University Tech Student Fund | Philanthropy by Kachi-Nwoga Hendrick</title>
+  <meta name="description" content="Fundraiser and charity initiative providing tuition relief, laptops, data stipends, and senior dev mentorship to 1st-3rd year tech students in Nigerian universities.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nigerian University Tech Student Support Fund">
+  <meta property="og:description" content="Empowering 1st-through-3rd year Computer Science and Software Engineering students across Nigerian state and federal universities.">
+  <meta property="og:image" content="assets/images/philanthropy_hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Home page">
+        <span class="nav-brand-mark">K</span>
+        <span>Kachi-Nwoga</span>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="developer.html" class="nav-link">Developer</a></li>
+          <li><a href="graphic-art.html" class="nav-link">Graphic Art</a></li>
+          <li><a href="performance.html" class="nav-link">Performance Art</a></li>
+          <li><a href="fashion.html" class="nav-link">Fashion</a></li>
+          <li><a href="philanthropy.html" class="nav-link active" aria-current="page">Philanthropy</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="section text-center">
+      <div class="container container-narrow reveal">
+        <span class="pill pill-gold" style="margin-bottom: var(--space-4);">Grassroots Charity & Fundraiser</span>
+        <h1 class="gradient-gold-text" style="margin-bottom: var(--space-4);">Nigerian University Tech Student Support Fund</h1>
+        <p class="section-lead">
+          Ensuring bright, driven 1st-through-3rd year computer science and engineering undergraduates never have to abandon their education due to financial hardship.
+        </p>
+        <div class="flex justify-center gap-4" style="margin-top: var(--space-6); flex-wrap: wrap;">
+          <a href="#apply" class="btn btn-outline" style="border-color: var(--color-gold); color: #fff;">For Students: Apply Now</a>
+          <button class="btn btn-gold support-trigger-btn" id="hero-support-btn">
+            Support This Cause
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Statement Block -->
+    <section class="section" style="background-color: var(--color-bg-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);" id="mission">
+      <div class="container grid grid-2 items-center">
+        <div class="reveal-left">
+          <img src="assets/images/philanthropy_hero.jpg" alt="Nigerian university tech students in computer lab" style="border-radius: var(--radius-xl); border: 1px solid var(--color-border-hover); box-shadow: var(--shadow-lg);">
+        </div>
+
+        <div class="reveal-right">
+          <span class="pill pill-accent" style="margin-bottom: var(--space-3);">Founder's Note</span>
+          <h2 style="margin-bottom: var(--space-4);">Why This Fund Exists</h2>
+          <p style="margin-bottom: var(--space-4);">
+            "Having spent 15+ years in global software engineering, I have met brilliant young minds in Nigeria whose tech journeys were abruptly cut short by unexpected tuition hikes, broken laptops, or lack of internet data."
+          </p>
+          <p style="margin-bottom: var(--space-6);">
+            This fund is designed to step in early—during Year 1 through Year 3—when financial pressure is highest, giving students the security, hardware, and senior mentorship needed to graduate and launch world-class tech careers.
+          </p>
+          <div class="grid grid-2 gap-4">
+            <div style="background: rgba(255, 255, 255, 0.03); padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+              <h3 class="text-gold" style="font-size: 1.5rem; margin-bottom: 2px;">100%</h3>
+              <p style="font-size: 0.85rem; margin-bottom: 0;">Direct Student Impact</p>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.03); padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+              <h3 class="text-gold" style="font-size: 1.5rem; margin-bottom: 2px;">1:1</h3>
+              <p style="font-size: 0.85rem; margin-bottom: 0;">Senior Dev Mentorship</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Pillars (What Support Includes) -->
+    <section class="section" id="pillars">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-subtitle">Comprehensive Support</span>
+          <h2 class="section-title">The Four Support Pillars</h2>
+          <p class="section-lead">We do not just hand out grants; we provide a holistic launchpad for student success.</p>
+        </div>
+
+        <div class="grid grid-4 gap-6">
+          <!-- Pillar 1 -->
+          <div class="card reveal">
+            <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(255, 183, 3, 0.15); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: var(--space-4);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: var(--space-2);">Tuition Relief Grants</h3>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted);">Direct semester tuition grants paid to university bursaries to prevent dropouts due to unpaid fees.</p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="card reveal">
+            <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(255, 183, 3, 0.15); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: var(--space-4);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: var(--space-2);">Hardware & Laptops</h3>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted);">Provision of durable high-performance developer laptops equipped with modern software environments.</p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="card reveal">
+            <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(255, 183, 3, 0.15); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: var(--space-4);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071a10 10 0 0114.142 0M1.394 9.393a15 15 0 0121.213 0"/></svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: var(--space-2);">Internet Data Stipends</h3>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted);">Monthly high-speed data allowances so students can access online documentation, tutorials, and GitHub.</p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="card reveal">
+            <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(255, 183, 3, 0.15); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: var(--space-4);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: var(--space-2);">Mentorship & Placement</h3>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted);">Dedicated 1:1 code reviews, career guidance, and internship fast-track connections with African tech companies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Application Form Section (Path A) -->
+    <section class="section" style="background-color: var(--color-bg-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);" id="apply">
+      <div class="container container-narrow reveal">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Path A: Eligible Undergraduates</span>
+          <h2 class="section-title">Apply for Student Support</h2>
+          <p class="section-lead">Are you a 1st, 2nd, or 3rd year Computer Science, Software Engineering, or Tech student at a Nigerian university? Submit your interest below.</p>
+        </div>
+
+        <form class="card" action="https://formspree.io/f/sample" method="POST" id="student-form" style="padding: var(--space-8);">
+          <div class="grid grid-2 gap-6" style="margin-bottom: var(--space-6);">
+            <div>
+              <label for="student-name" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: var(--space-2);">Full Name *</label>
+              <input type="text" id="student-name" name="name" required placeholder="e.g. Chidi Okonkwo" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-md); background: var(--color-bg-dark); border: 1px solid var(--color-border);">
+            </div>
+            <div>
+              <label for="student-email" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: var(--space-2);">University Email or Personal Email *</label>
+              <input type="email" id="student-email" name="email" required placeholder="student@univ.edu.ng" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-md); background: var(--color-bg-dark); border: 1px solid var(--color-border);">
+            </div>
+          </div>
+
+          <div class="grid grid-3 gap-6" style="margin-bottom: var(--space-6);">
+            <div>
+              <label for="student-uni" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: var(--space-2);">University *</label>
+              <input type="text" id="student-uni" name="university" required placeholder="UNILAG, OAU, UNN, FUTA, etc." style="width: 100%; padding: 0.75rem; border-radius: var(--radius-md); background: var(--color-bg-dark); border: 1px solid var(--color-border);">
+            </div>
+            <div>
+              <label for="student-year" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: var(--space-2);">Current Level / Year *</label>
+              <select id="student-year" name="year" required style="width: 100%; padding: 0.75rem; border-radius: var(--radius-md); background: var(--color-bg-dark); border: 1px solid var(--color-border); color: #fff;">
+                <option value="">Select Year...</option>
+                <option value="100 Level / 1st Year">100 Level / 1st Year</option>
+                <option value="200 Level / 2nd Year">200 Level / 2nd Year</option>
+                <option value="300 Level / 3rd Year">300 Level / 3rd Year</option>
+              </select>
+            </div>
+            <div>
+              <label for="student-course" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: var(--space-2);">Field of Study *</label>
+              <input type="text" id="student-course" name="course" required placeholder="Computer Science, Cybersecurity, etc." style="width: 100%; padding: 0.75rem; border-radius: var(--radius-md); background: var(--color-bg-dark); border: 1px solid var(--color-border);">
+            </div>
+          </div>
+
+          <div style="margin-bottom: var(--space-6);">
+            <label for="student-statement" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: var(--space-2);">Short Statement of Need & Passion *</label>
+            <textarea id="student-statement" name="statement" rows="4" required placeholder="Tell us about your tech goals, what project you are working on, and how this scholarship will impact your journey..." style="width: 100%; padding: 0.75rem; border-radius: var(--radius-md); background: var(--color-bg-dark); border: 1px solid var(--color-border);"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-lg" style="width: 100%;">Submit Application Interest</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Support Section (Path B - Reusable Button Target) -->
+    <section class="section" id="support">
+      <div class="container container-narrow text-center reveal">
+        <div class="philanthropy-banner">
+          <div class="philanthropy-content">
+            <span class="pill pill-gold" style="margin-bottom: var(--space-4);">Path B: Donors & Corporate Sponsors</span>
+            <h2 class="gradient-gold-text" style="margin-bottom: var(--space-4);">Partner With Us to Change Lives</h2>
+            <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: var(--space-8);">
+              Whether you are an individual donor, an alumni association, or a corporate tech sponsor, your contribution goes directly to student grants, hardware, and infrastructure.
+            </p>
+            <button class="btn btn-gold btn-lg support-trigger-btn">
+              Support This Cause
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Reusable Donation / Support Modal Component -->
+  <div class="modal" id="support-modal" role="dialog" aria-modal="true" aria-label="Support student fund options">
+    <button class="modal-close" id="support-modal-close" aria-label="Close modal">&times;</button>
+    <div class="modal-content" style="max-width: 600px; padding: var(--space-8);">
+      <span class="pill pill-gold" style="margin-bottom: var(--space-3); width: fit-content;">Donate & Get Involved</span>
+      <h3 style="font-size: 1.75rem; margin-bottom: var(--space-3);">Support Nigerian Tech Scholars</h3>
+      <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: var(--space-6);">
+        Choose how you would like to contribute to the university tech student support program:
+      </p>
+
+      <!-- Option A: Mailing List / Notifications (Option A) -->
+      <div style="background: rgba(255, 183, 3, 0.08); border: 1px solid rgba(255, 183, 3, 0.3); border-radius: var(--radius-md); padding: var(--space-6); margin-bottom: var(--space-6);">
+        <h4 style="color: var(--color-gold); margin-bottom: var(--space-2);">Option A: Join Donor Notification List</h4>
+        <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: var(--space-4);">
+          Get direct email updates on student cohort selections, transparency reports, and early access when public donation batches open.
+        </p>
+        <form action="https://formspree.io/f/sample" method="POST" class="flex gap-2" style="flex-wrap: wrap;">
+          <input type="email" name="donor_email" required placeholder="Enter your email" style="flex: 1; min-width: 200px; padding: 0.6rem; border-radius: var(--radius-sm); background: var(--color-bg-dark); border: 1px solid var(--color-border);">
+          <button type="submit" class="btn btn-gold btn-sm">Notify Me</button>
+        </form>
+      </div>
+
+      <!-- Option B: Live Hosted Payment Portal (Option B) -->
+      <div style="background: rgba(58, 134, 255, 0.08); border: 1px solid var(--color-border-accent); border-radius: var(--radius-md); padding: var(--space-6);">
+        <h4 style="color: var(--color-accent-light); margin-bottom: var(--space-2);">Option B: Direct Payment Portal</h4>
+        <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: var(--space-4);">
+          Ready to donate now? Click below to be directed to our secure hosted payment portal (Paystack / Flutterwave integration ready).
+        </p>
+        <a href="contact.html?subject=Fundraiser+Donation" class="btn btn-primary btn-sm" style="width: 100%;">
+          Proceed to Hosted Payment Portal
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="nav-brand" style="margin-bottom: var(--space-4);">
+            <span class="nav-brand-mark">K</span>
+            <span>Kachi-Nwoga Hendrick</span>
+          </div>
+          <p class="footer-brand-desc">Senior Full-Stack Developer, Multidisciplinary Visual & Movement Artist, and Educational Philanthropist.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="developer.html">Software Engineering</a></li>
+            <li><a href="graphic-art.html">Graphic Art & Design</a></li>
+            <li><a href="performance.html">Choreography</a></li>
+            <li><a href="fashion.html">Fashion Design</a></li>
+            <li><a href="philanthropy.html">Philanthropy Initiative</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="philanthropy.html#apply">Student Application</a></li>
+            <li><a href="contact.html">Sponsorship Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Fundraiser Initiative</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: var(--space-4);">Empowering 1st-3rd year tech scholars across Nigerian public universities.</p>
+          <button class="btn btn-gold btn-sm support-trigger-btn">Support Student Fund</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kachi-Nwoga Uchechukwu Edward Hendrick. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    // Support Modal Handler
+    document.addEventListener('DOMContentLoaded', () => {
+      const supportModal = document.getElementById('support-modal');
+      const supportBtns = document.querySelectorAll('.support-trigger-btn');
+      const closeBtn = document.getElementById('support-modal-close');
+
+      if (supportModal && supportBtns.length > 0) {
+        supportBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            supportModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          });
+        });
+
+        if (closeBtn) {
+          closeBtn.addEventListener('click', () => {
+            supportModal.classList.remove('active');
+            document.body.style.overflow = '';
+          });
+        }
+
+        supportModal.addEventListener('click', (e) => {
+          if (e.target === supportModal) {
+            supportModal.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* ==========================================================================
+   Expressive CSS - Visual Treatment & Flourishes for Creative Discipline Pages
+   Applied ONLY to <body class="expressive"> (Graphic Art, Performance, Fashion)
+   ========================================================================== */
+
+/* 1. Expressive Custom Properties Overrides */
+body.expressive {
+  --color-bg-dark: #08070d;
+  --color-bg-surface: #110e1a;
+  --color-bg-card: #191428;
+  --color-bg-elevated: #241c38;
+  
+  /* Vibrant Creative Accents */
+  --color-accent: #ff2e93;             /* Neon Electric Magenta */
+  --color-accent-hover: #e0007b;
+  --color-accent-light: #ff70b8;
+  --color-accent-rgb: 255, 46, 147;
+  --color-accent-glow: rgba(255, 46, 147, 0.4);
+
+  --color-accent-2: #9d4edd;           /* Electric Cyber Violet */
+  --color-accent-2-rgb: 157, 78, 221;
+  --color-accent-2-glow: rgba(157, 78, 221, 0.35);
+
+  --color-accent-3: #00f5d4;           /* Vivid Electric Teal/Cyan */
+  
+  --color-border: rgba(255, 46, 147, 0.15);
+  --color-border-hover: rgba(255, 46, 147, 0.4);
+  --color-border-accent: rgba(255, 46, 147, 0.6);
+
+  /* Expressive Display Typography scaling */
+  --font-heading: 'Outfit', sans-serif;
+  --font-display: 'Syne', sans-serif;
+}
+
+/* 2. Expressive Hero & Visual Atmospheric Backgrounds */
+body.expressive::before {
+  content: '';
+  position: fixed;
+  top: -20%;
+  right: -10%;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, var(--color-accent-glow) 0%, rgba(157, 78, 221, 0.15) 50%, transparent 70%);
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.65;
+  animation: floatGlow 12s ease-in-out infinite alternate;
+}
+
+body.expressive::after {
+  content: '';
+  position: fixed;
+  bottom: -15%;
+  left: -10%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, var(--color-accent-2-glow) 0%, rgba(0, 245, 212, 0.1) 50%, transparent 70%);
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+  animation: floatGlowReverse 15s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlow {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-40px, 60px) scale(1.1); }
+  100% { transform: translate(30px, -40px) scale(0.95); }
+}
+
+@keyframes floatGlowReverse {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(50px, -30px) scale(1.15); }
+  100% { transform: translate(-30px, 40px) scale(0.9); }
+}
+
+/* 3. Expressive Typography & Gradient Text Enhancements */
+body.expressive .gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #ff70b8 40%, var(--color-accent-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body.expressive h1, 
+body.expressive h2 {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
+
+/* 4. Asymmetric Creative Grid & Gallery Layouts */
+body.expressive .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+body.expressive .gallery-item:nth-child(3n + 1) {
+  height: 420px;
+}
+
+body.expressive .gallery-item:nth-child(3n + 2) {
+  height: 350px;
+}
+
+body.expressive .gallery-item:nth-child(3n + 3) {
+  height: 480px;
+}
+
+@media (max-width: 900px) {
+  body.expressive .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body.expressive .gallery-item {
+    height: 320px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  body.expressive .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 5. Expressive Cards & Glassmorphism Flourishes */
+body.expressive .card,
+body.expressive .gallery-item,
+body.expressive .teaser-card {
+  background: rgba(25, 20, 40, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 46, 147, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+body.expressive .card:hover,
+body.expressive .gallery-item:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 12px 40px var(--color-accent-glow), 0 0 20px rgba(157, 78, 221, 0.2);
+  transform: translateY(-6px) rotate(0.5deg);
+}
+
+body.expressive .gallery-overlay {
+  background: linear-gradient(to top, rgba(8, 7, 13, 0.98) 0%, rgba(157, 78, 221, 0.4) 70%, transparent 100%);
+}
+
+/* 6. Expressive Buttons & Badges */
+body.expressive .btn-primary {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-2) 100%);
+  border: none;
+  box-shadow: 0 4px 20px var(--color-accent-glow);
+}
+
+body.expressive .btn-primary:hover {
+  background: linear-gradient(135deg, var(--color-accent-hover) 0%, var(--color-accent) 100%);
+  box-shadow: 0 8px 30px var(--color-accent-glow);
+  transform: translateY(-3px) scale(1.02);
+}
+
+body.expressive .pill-accent {
+  background: rgba(255, 46, 147, 0.15);
+  border-color: rgba(255, 46, 147, 0.4);
+  color: var(--color-accent-light);
+}
+
+body.expressive .filter-btn.active {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-2) 100%);
+  border-color: transparent;
+  box-shadow: 0 4px 20px var(--color-accent-glow);
+}
+
+/* 7. Expressive Lookbook & Performance Media Specials */
+.lookbook-quote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: var(--space-6);
+  font-size: var(--font-size-xl);
+  font-family: var(--font-display);
+  font-style: italic;
+  color: #ffffff;
+  margin: var(--space-8) 0;
+  background: rgba(255, 46, 147, 0.05);
+  padding: var(--space-6) var(--space-8);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+}
+
+.video-card-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 46, 147, 0.85);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px var(--color-accent-glow);
+  transition: all var(--transition-bounce);
+}
+
+.gallery-item:hover .video-card-play {
+  transform: translate(-50%, -50%) scale(1.15);
+  background: var(--color-accent);
+}
